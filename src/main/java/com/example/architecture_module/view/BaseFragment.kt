@@ -13,7 +13,7 @@ import androidx.lifecycle.*
 
 abstract class BaseFragment<T : ViewDataBinding, VM : ViewModel> : Fragment() {
 
-    private lateinit var dataBinding: T
+    lateinit var dataBinding: T
 
     @get:LayoutRes
     protected abstract val layoutId: Int
